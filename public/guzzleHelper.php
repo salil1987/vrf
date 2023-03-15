@@ -8,7 +8,6 @@ class guzzleHelper{
     function __construct()
     {
         require_once __DIR__ . '/config.php';
-        
     }
 
     function send($request, $type='GET'){
