@@ -1,6 +1,0 @@
-{
-    "require": {
-        "guzzlehttp/promises": "^1.5",
-        "guzzlehttp/psr7": "^1.9 || ^2.4"
-    }
-}
