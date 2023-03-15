@@ -17,10 +17,8 @@ use GuzzleHttp\Psr7;
 require __DIR__ . '/../vendor/autoload.php';
 ini_set('display_errors','On');
 error_reporting(E_ALL);
-
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/guzzleHelper.php';
-
 
 
 $app = AppFactory::create();
@@ -47,17 +45,9 @@ $app->post('/{action}', function (Request $request, Response $response, $args) u
 	$response = $response->withHeader('Content-Type', 'application/xml');
 	return $response;
 
-	////////////////
-	$payload['a'] = "sample data WEST";
-	$payload['b'] = "sample data b";
-	$payload['c'] = "sample data c";
-
-
-	$response->getBody()->write(json_encode($payload));
-	
-    return $response;
-
 });
+
+///TODO make PUT and DELETE calls if required.
 
 
 $app->run();
