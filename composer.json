@@ -24,7 +24,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
-        "guzzlehttp/guzzle": "^7.5",
+        "guzzlehttp/guzzle": "^7.7",
         "guzzlehttp/promises": "^1.5",
         "guzzlehttp/psr7": "^1.9 || ^2.4",
         "monolog/monolog": "^2.9",
